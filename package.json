@@ -1,6 +1,6 @@
 {
   "name": "@casper124578/useful",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "List of useful React functions and hooks",
   "main": "index.ts",
   "scripts": {

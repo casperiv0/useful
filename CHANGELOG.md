@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.5
+
+- Fixed imports
+
 ## 0.0.4
 
 - Minor fixes
