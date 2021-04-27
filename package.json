@@ -1,11 +1,13 @@
 {
   "name": "@casper124578/useful",
-  "version": "0.0.1",
-  "description": "Soon™️",
+  "version": "0.0.2",
+  "description": "List of useful React functions and hooks",
   "main": "index.ts",
   "scripts": {
     "prettier:fix": "prettier --write .",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build": "rm -rf ./dist && tsc",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
