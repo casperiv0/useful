@@ -1,8 +1,8 @@
 import * as React from "react";
 
 type ReturnType<T> = {
-  search: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  search: string;
   filtered: T[];
 };
 
@@ -28,8 +28,8 @@ export function useSearch<T = object>(key: keyof T, items: T[]): ReturnType<T> {
     } else {
       setFiltered(
         items.filter((v) =>
-          ((v[key] as unknown) as string).toString().toLowerCase().includes(value.toLowerCase())
-        )
+          ((v[key] as unknown) as string).toString().toLowerCase().includes(value.toLowerCase()),
+        ),
       );
     }
   }
