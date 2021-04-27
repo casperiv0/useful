@@ -10,6 +10,25 @@ type ReturnType<T> = {
  * Search through an array with the provided key
  * @param key the key you want to search through the array
  * @param items the array you want to use to search
+ * @example
+ *
+ * interface MyThing {
+ *  name: string;
+ *  age: string;
+ * }
+ *
+ * const SearchComponent = () => {
+ *  const { onChange, search, filtered } = useSearch<MyThing>("name", myDataArr);
+ *
+ *
+ * return <div>
+ *   <input value={search} onChange={onChange} className="search-value" />
+ *
+ *   <div className="my-results">
+ *    {filtered.map((item) => (<p>{item.name}</p>))}
+ *   </div>
+ *  </div>
+ * }
  */
 export function useSearch<T = object>(key: keyof T, items: T[]): ReturnType<T> {
   const [search, setSearch] = React.useState("");

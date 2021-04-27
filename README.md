@@ -35,3 +35,4 @@ const Component = () => {
 - `useNetworkStatus`
 - `usePortal`
 - `useSearch`
+- `useSound`

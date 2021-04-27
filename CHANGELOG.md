@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.0.7
+
+- Added `useSound` hook
+- Added examples for `useSearch` and `useMounted`
+
+## 0.0.6
+
+- version was skipped.
+
 ## 0.0.5
 
 - Fixed imports
