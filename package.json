@@ -1,12 +1,13 @@
 {
   "name": "@casper124578/useful",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "List of useful React functions and hooks",
   "main": "index.ts",
   "scripts": {
     "prettier:fix": "prettier --write .",
     "lint": "eslint .",
-    "build": "rm -rf ./dist && tsc",
+    "remove-build": "rm -rf index.js index.d.ts hooks",
+    "build": "npm run remove-build && tsc",
     "prepublish": "npm run build"
   },
   "repository": {
@@ -38,6 +39,8 @@
     "react-dom": "^16.8.0  || ^17.0.0"
   },
   "files": [
-    "dist/"
+    "hooks/",
+    "index.js",
+    "index.d.ts"
   ]
 }

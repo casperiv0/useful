@@ -1,2 +1,7 @@
 dist
 node_modules
+
+hooks
+*.d.ts
+index.js
+!src/*
