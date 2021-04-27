@@ -19,7 +19,7 @@ yarn add @casper124578/useful
 ## Usage
 
 ```tsx
-import { useMounted } from "@casper124578/useful/useMounted";
+import { useMounted } from "@casper124578/useful/hooks/useMounted";
 
 const Component = () => {
   const mounted = useMounted();
@@ -28,3 +28,10 @@ const Component = () => {
   return <p>Hello world!</p>;
 };
 ```
+
+## Available hooks
+
+- `useMounted`
+- `useNetworkStatus`
+- `usePortal`
+- `useSearch`
