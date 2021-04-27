@@ -1,2 +1,6 @@
 node_modules
-dist
+
+hooks/*
+!src/hooks
+index.js
+index.d.ts
