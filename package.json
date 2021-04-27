@@ -1,8 +1,8 @@
 {
   "name": "useful",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Soon™️",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/Dev-CasperTheGhost/useful.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react-hooks"
+  ],
   "author": "",
   "license": "MIT",
   "bugs": {
@@ -18,6 +20,11 @@
   },
   "homepage": "https://github.com/Dev-CasperTheGhost/useful#readme",
   "devDependencies": {
+    "@types/react": "^17.0.4",
     "typescript": "^4.2.4"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0  || ^17.0.0",
+    "react-dom": "^16.8.0  || ^17.0.0"
   }
 }
