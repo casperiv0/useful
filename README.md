@@ -37,3 +37,4 @@ const Component = () => {
 - `useSearch`
 - `useSound`
 - `useWindowEvent`
+- `useEmitEvent`

@@ -4,3 +4,4 @@ export { usePortal } from "./hooks/usePortal";
 export { useSearch } from "./hooks/useSearch";
 export { useSound } from "./hooks/useSound";
 export { useWindowEvent } from "./hooks/useWindowEvent";
+export { useEmitEvent } from "./hooks/useEmitEvent";

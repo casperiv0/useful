@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.9
+
+- Added `useEmitEvent` hook
+
 ## 0.0.8
 
 - Added `useWindowEvent` hook
