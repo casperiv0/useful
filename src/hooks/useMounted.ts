@@ -4,13 +4,14 @@ import * as React from "react";
  * Check if a component has mounted
  * @returns {boolean} wether the component has mounted
  * @example
- *
+ * ```
  * const Component = () => {
  *  const mounted = useMounted();
  *  console.log("Mounted?", mounted);
  *
  *  return <div>Hello world!</div>
  * }
+ * ```
  */
 export function useMounted(): boolean {
   const [isMounted, setMounted] = React.useState(false);

@@ -12,6 +12,7 @@ type ReturnType<T> = {
  * @param items the array you want to use to search
  * @example
  *
+ * ```
  * interface MyThing {
  *  name: string;
  *  age: string;
@@ -29,6 +30,7 @@ type ReturnType<T> = {
  *   </div>
  *  </div>
  * }
+ * ```
  */
 export function useSearch<T = object>(key: keyof T, items: T[]): ReturnType<T> {
   const [search, setSearch] = React.useState("");

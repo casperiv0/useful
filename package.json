@@ -1,8 +1,8 @@
 {
   "name": "@casper124578/useful",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "List of useful React functions and hooks",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
     "prettier:fix": "prettier --write .",
     "lint": "eslint .",

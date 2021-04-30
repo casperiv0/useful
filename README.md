@@ -36,3 +36,4 @@ const Component = () => {
 - `usePortal`
 - `useSearch`
 - `useSound`
+- `useWindowEvent`

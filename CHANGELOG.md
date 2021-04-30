@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.8
+
+- Added `useWindowEvent` hook
+
 ## 0.0.7
 
 - Added `useSound` hook

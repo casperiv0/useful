@@ -4,6 +4,7 @@ import * as React from "react";
  * Create a portal ref to create a portal.
  * @param {string} id The portal ID
  * @example
+ * ```
  * import ReactDOM from "react-dom";
  *
  * const Component = () => {
@@ -11,6 +12,7 @@ import * as React from "react";
  *
  *   return portalRef ? ReactDOM.createPortal(<div>Hello world!</div>, portalRef) : null
  * }
+ * ```
  */
 export function usePortal(id: string = "Portal"): HTMLDivElement | null {
   const ref = React.useRef<HTMLDivElement>(null);
