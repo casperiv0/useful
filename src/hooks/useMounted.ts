@@ -1,7 +1,7 @@
 import * as React from "react";
 
 /**
- * Check if a component has mounted
+ * check if a component has mounted
  * @returns {boolean} wether the component has mounted
  * @example
  * ```

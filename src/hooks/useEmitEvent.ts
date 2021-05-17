@@ -2,14 +2,14 @@ import * as React from "react";
 
 type ReturnType<T> = {
   /**
-   * The event
+   * the event
    */
   event: CustomEvent<T> | null;
   dispatch: () => boolean;
 };
 
 /**
- * Easily emit an event using `dispatchEvent` and `CustomEvent`
+ * easily emit an event using `dispatchEvent` and `CustomEvent`
  *
  * @param {string} eventName Name of the event
  * @param {?CustomEventInit["detail"]} payload The event payload

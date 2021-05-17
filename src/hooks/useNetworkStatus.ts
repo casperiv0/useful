@@ -3,7 +3,7 @@ import * as React from "react";
 export type Status = "online" | "offline" | null;
 
 /**
- * Check if a user is connected to a network.
+ * check if a user is connected to a network.
  * @returns {Status} the user's status.
  * @example
  * const networksStatus = useNetworkStatus();

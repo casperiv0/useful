@@ -7,7 +7,7 @@ type ReturnType<T> = {
 };
 
 /**
- * Search through an array with the provided key
+ * search through an array with the provided key
  * @param key the key you want to search through the array
  * @param items the array you want to use to search
  * @example

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.10
+
+- Added [custom ESLint config](https://github.com/dev-caspertheghost/eslint-config)
+
 ## 0.0.9
 
 - Added `useEmitEvent` hook

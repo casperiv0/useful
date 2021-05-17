@@ -1,7 +1,7 @@
 import * as React from "react";
 
 /**
- * Create a portal ref to create a portal.
+ * create a portal ref to create a portal.
  * @param {string} id The portal ID
  * @example
  * ```

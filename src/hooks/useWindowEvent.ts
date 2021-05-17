@@ -1,7 +1,7 @@
 import * as React from "react";
 
 /**
- * Listen for an event and automatically clean up the effect on un-mount
+ * listen for an event and automatically clean up the effect on un-mount
  * @param {string} eventName Name of the eventName
  * @param {EventListenerOrEventListenerObject} listener Callback function
  * @param {boolean | AddEventListenerOptions} options
