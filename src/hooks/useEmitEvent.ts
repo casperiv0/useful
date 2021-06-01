@@ -50,7 +50,7 @@ export function useEmitEvent<T = unknown>(
     return () => {
       setEvent(null);
     };
-  }, []);
+  }, [eventName, options, payload]);
 
   const dispatch = React.useCallback(() => {
     if (!event) {

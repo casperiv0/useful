@@ -32,6 +32,8 @@ type ReturnType<T> = {
  * }
  * ```
  */
+
+// eslint-disable-next-line @typescript-eslint/ban-types
 export function useSearch<T = object>(key: keyof T, items: T[]): ReturnType<T> {
   const [search, setSearch] = React.useState("");
   const [filtered, setFiltered] = React.useState<T[]>(items);
@@ -49,7 +51,7 @@ export function useSearch<T = object>(key: keyof T, items: T[]): ReturnType<T> {
     } else {
       setFiltered(
         items.filter((v) =>
-          ((v[key] as unknown) as string).toString().toLowerCase().includes(value.toLowerCase()),
+          (v[key] as unknown as string).toString().toLowerCase().includes(value.toLowerCase()),
         ),
       );
     }

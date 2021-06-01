@@ -1,13 +1,13 @@
 {
   "name": "@casper124578/useful",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "List of useful React functions and hooks",
   "main": "index.js",
   "scripts": {
-    "prettier:fix": "prettier --write .",
     "lint": "eslint .",
     "remove-build": "rm -rf index.js index.d.ts hooks",
     "build": "npm run remove-build && tsc",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,css,json}\" --ignore-path .gitignore",
     "prepublish": "npm run build"
   },
   "repository": {
@@ -17,27 +17,26 @@
   "keywords": [
     "react-hooks"
   ],
-  "author": "Dev-CasperTheGhost <casper.iversen2@gmail.com>",
+  "author": {
+    "name": "Dev-CasperTheGhost",
+    "url": "https://caspertheghost.me"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Dev-CasperTheGhost/useful/issues"
   },
   "homepage": "https://github.com/Dev-CasperTheGhost/useful#readme",
   "devDependencies": {
-    "@casper124578/eslint-config": "^0.0.3",
-    "@types/react": "^17.0.4",
-    "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/parser": "^4.22.0",
-    "eslint": "^7.25.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.23.2",
-    "prettier": "^2.2.1",
-    "typescript": "^4.2.4"
+    "@casper124578/eslint-config": "^0.0.13",
+    "@casper124578/eslint-config-react": "^0.0.5",
+    "@types/react": "^17.0.8",
+    "eslint": "^7.27.0",
+    "eslint-plugin-react": "^7.24.0",
+    "typescript": "^4.3.2"
   },
   "peerDependencies": {
-    "react": "^16.8.0  || ^17.0.0",
-    "react-dom": "^16.8.0  || ^17.0.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "files": [
     "hooks/",

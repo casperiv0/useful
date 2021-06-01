@@ -42,7 +42,7 @@ export function useSound(path: string): ReturnType {
     const a = new Audio(path);
 
     setAudio(a);
-  }, []);
+  }, [path]);
 
   return {
     play,

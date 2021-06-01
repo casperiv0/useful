@@ -3,13 +3,7 @@
     "browser": true,
     "es6": true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "@casper124578/eslint-config",
-    "prettier"
-  ],
+  "extends": ["@casper124578/eslint-config", "@casper124578/eslint-config-react"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -21,23 +15,5 @@
     },
     "ecmaVersion": 2018,
     "sourceType": "module"
-  },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
-  "rules": {
-    "no-undef": "off",
-    "prettier/prettier": [
-      "warn",
-      {
-        "endOfLine": "auto"
-      }
-    ]
-  },
-  "settings": {
-    "react": {
-      "createClass": "createReactClass",
-      "pragma": "React",
-      "fragment": "Fragment",
-      "version": "detect"
-    }
   }
 }

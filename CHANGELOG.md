@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.11
+
+- Bump dependencies
+- Add `format` script
+- Fix `React.useEffect` dependencies array
+
 ## 0.0.10
 
 - Added [custom ESLint config](https://github.com/dev-caspertheghost/eslint-config)

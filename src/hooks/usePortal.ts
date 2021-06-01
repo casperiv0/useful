@@ -14,7 +14,7 @@ import * as React from "react";
  * }
  * ```
  */
-export function usePortal(id: string = "Portal"): HTMLDivElement | null {
+export function usePortal(id = "Portal"): HTMLDivElement | null {
   const ref = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
