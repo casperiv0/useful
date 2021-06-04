@@ -1,5 +1,30 @@
 # Changelog
 
+## 0.0.12
+
+- Fix allow setting type for `onChange` method (eg: `HTMLInputElement`, `HTMLTextAreaElement`)
+
+**Example:**
+
+```tsx
+const Component = () => {
+  const { search, onChange, filtered } = useSearch<any, HTMLTextAreaElement>("age", [
+    { age: 1 },
+    { age: 4 },
+    { age: 22 },
+  ]);
+
+  console.log(filtered);
+
+  return (
+    <div>
+      {/* this now works! */}
+      <textarea value={search} onChange={onChange} />
+    </div>
+  );
+};
+```
+
 ## 0.0.11
 
 - Bump dependencies

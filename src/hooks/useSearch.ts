@@ -1,7 +1,7 @@
 import * as React from "react";
 
-type ReturnType<T> = {
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+type ReturnType<T, InputElement> = {
+  onChange: (e: React.ChangeEvent<InputElement>) => void;
   search: string;
   filtered: T[];
 };
@@ -34,7 +34,10 @@ type ReturnType<T> = {
  */
 
 // eslint-disable-next-line @typescript-eslint/ban-types
-export function useSearch<T = object>(key: keyof T, items: T[]): ReturnType<T> {
+export function useSearch<T = object, InputElement extends HTMLElement = HTMLInputElement>(
+  key: keyof T,
+  items: T[],
+): ReturnType<T, InputElement> {
   const [search, setSearch] = React.useState("");
   const [filtered, setFiltered] = React.useState<T[]>(items);
 
@@ -42,8 +45,8 @@ export function useSearch<T = object>(key: keyof T, items: T[]): ReturnType<T> {
     setFiltered(items);
   }, [items]);
 
-  function onChange(e: React.ChangeEvent<HTMLInputElement>) {
-    const value = e.target.value;
+  function onChange(e: React.ChangeEvent<InputElement>) {
+    const value = (e.target as any).value;
     setSearch(value);
 
     if (value.length <= 0) {
