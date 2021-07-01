@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.13
+
+- Bump dependencies
+
 ## 0.0.12
 
 - Fix allow setting type for `onChange` method (eg: `HTMLInputElement`, `HTMLTextAreaElement`)
