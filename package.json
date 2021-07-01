@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/Dev-CasperTheGhost/useful#readme",
   "devDependencies": {
-    "@casper124578/eslint-config": "^0.0.13",
+    "@casper124578/eslint-config": "^0.0.14",
     "@casper124578/eslint-config-react": "^0.0.5",
     "@types/react": "^17.0.8",
     "eslint": "^7.27.0",
