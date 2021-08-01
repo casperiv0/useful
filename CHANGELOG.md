@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.14
+
+- Bump dependencies
+
 ## 0.0.13
 
 - Bump dependencies
