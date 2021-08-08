@@ -12,7 +12,7 @@ type ReturnType<T, InputElement> = {
  * @param items the array you want to use to search
  * @example
  *
- * ```
+ * ```tsx
  * interface MyThing {
  *  name: string;
  *  age: string;

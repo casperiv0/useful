@@ -7,14 +7,13 @@ import * as React from "react";
  * @param {boolean | AddEventListenerOptions} options
  * @see [https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
  * @example
- * ```
- *
+ * ```tsx
  * const Component = () => {
  *  const clickHandler = (e) => {
  *     console.log(e.target);
  *  }
  *
- *   useWindowEvent("click", clickHandler, options?);
+ *   useWindowEvent("click", clickHandler, options);
  *
  *   return <p>Hello world!</p>
  * }

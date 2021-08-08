@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.15
+
+- Fix comments language
+- Remove `removeComments` from tsconfig
+
 ## 0.0.14
 
 - Bump dependencies

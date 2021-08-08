@@ -4,7 +4,7 @@ import * as React from "react";
  * create a portal ref to create a portal.
  * @param {string} id The portal ID
  * @example
- * ```
+ * ```tsx
  * import ReactDOM from "react-dom";
  *
  * const Component = () => {

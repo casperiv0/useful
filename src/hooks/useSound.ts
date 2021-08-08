@@ -12,6 +12,7 @@ type ReturnType = {
  * simplify the Audio class
  * @param path The path to the audio file
  * @example
+ * ```tsx
  * const Component = () => {
  *  // Play function, stop function, the rest of the Audio object
  *  const { play: playAudio, stop: stopAudio, audio } = useSound("/sounds/my-cool-sound.mp3");
@@ -21,6 +22,7 @@ type ReturnType = {
  *    <button onClick={stopAudio}>Stop the sound!</button>
  * </div>
  * }
+ * ```
  */
 export function useSound(path: string): ReturnType {
   const [audio, setAudio] = React.useState<NullableHTMLAudio>(null);

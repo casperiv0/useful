@@ -16,7 +16,7 @@ type ReturnType<T> = {
  * @param {?Omit<CustomEventInit, "detail">} options Options object for the event
  * @see [https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent)
  * @example
- * ```
+ * ```tsx
  * const Component = () => {
  *  const { dispatch, event } = useEmitEvent("MyCoolEvent");
  *
