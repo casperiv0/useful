@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.0
+
+- Require node 12.20
+- This package is now ESM only. Please [Read this](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c)
+- Bump dependencies
+
 ## 0.0.15
 
 - Fix comments language
