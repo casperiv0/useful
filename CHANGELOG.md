@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1
+
+- Bump dependencies
+
 ## 1.0.0
 
 - Require node 12.20
