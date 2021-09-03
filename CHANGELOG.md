@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0
+
+- Add `useDots` hook
+
 ## 1.0.1
 
 - Bump dependencies

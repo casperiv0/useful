@@ -38,3 +38,4 @@ const Component = () => {
 - `useSound`
 - `useWindowEvent`
 - `useEmitEvent`
+- `useDots`
