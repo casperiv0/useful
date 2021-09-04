@@ -5,3 +5,4 @@ export { useSearch } from "./useSearch.js";
 export { useSound } from "./useSound.js";
 export { useWindowEvent } from "./useWindowEvent.js";
 export { useEmitEvent } from "./useEmitEvent.js";
+export { useDots } from "./useDots.js";

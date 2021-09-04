@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0
+
+- [add docs](https://dev-caspertheghost.github.io/useful/)
+- Export `useDots` in `hooks/index`
+- Add event type for `useWindowEvent`
+
 ## 1.1.0
 
 - Add `useDots` hook
