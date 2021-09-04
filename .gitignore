@@ -1,7 +1,7 @@
 dist
 node_modules
 
-hooks
+/hooks
 *.d.ts
 index.js
 !src/*
