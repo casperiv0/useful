@@ -9,3 +9,4 @@
 - [`useSearch`](./hooks/use-search.md)
 - [`useSound`](./hooks/use-sound.md)
 - [`useWindowEvent`](./hooks/use-window-event.md)
+- [`useTabFocus`](./hooks/use-tab-focus.md)

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.0
+
+- Add `useTabFocus` hook
+
 ## 1.2.0
 
 - [add docs](https://dev-caspertheghost.github.io/useful/)
