@@ -8,7 +8,7 @@ export function useTabFocus(): boolean {
 
   React.useEffect(() => {
     const handler = () => {
-      setInFocus(document.hidden);
+      setInFocus(!document.hidden);
     };
 
     document.addEventListener("visibilitychange", handler);

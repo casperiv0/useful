@@ -7,3 +7,4 @@ export { useWindowEvent } from "./useWindowEvent.js";
 export { useEmitEvent } from "./useEmitEvent.js";
 export { useDots } from "./useDots.js";
 export { useTabFocus } from "./useTabFocus.js";
+export { useDownload } from "./useDownload.js";

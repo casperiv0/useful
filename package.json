@@ -1,6 +1,6 @@
 {
   "name": "@casper124578/useful",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "description": "List of useful React functions and hooks",
   "type": "module",
   "license": "MIT",
@@ -34,12 +34,12 @@
     "url": "https://github.com/Dev-CasperTheGhost/useful/issues"
   },
   "devDependencies": {
-    "@casper124578/eslint-config": "^0.0.17",
+    "@casper124578/eslint-config": "^1.0.0",
     "@casper124578/eslint-config-react": "^0.1.2",
-    "@types/react": "^17.0.20",
+    "@types/react": "^17.0.21",
     "eslint": "^7.32.0",
-    "eslint-plugin-react": "^7.25.1",
-    "typescript": "^4.4.2"
+    "eslint-plugin-react": "^7.25.2",
+    "typescript": "^4.4.3"
   },
   "peerDependencies": {
     "react": "^17.0.2",
