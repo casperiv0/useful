@@ -10,3 +10,4 @@
 - [`useSound`](./hooks/use-sound.md)
 - [`useWindowEvent`](./hooks/use-window-event.md)
 - [`useTabFocus`](./hooks/use-tab-focus.md)
+- [`useDownload`](./hooks/use-download.md)
