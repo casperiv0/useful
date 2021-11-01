@@ -11,7 +11,6 @@ Returns `filtered` with the filtered data.
 ```tsx
 import { useSearch } from "@casper124578/useful/hooks/useSearch";
 
-
 interface MyData {
   name: string;
   age: string;
