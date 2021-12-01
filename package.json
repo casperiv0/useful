@@ -34,7 +34,7 @@
     "url": "https://github.com/Dev-CasperTheGhost/useful/issues"
   },
   "devDependencies": {
-    "@casper124578/eslint-config": "^1.0.0",
+    "@casper124578/eslint-config": "^2.1.0",
     "@casper124578/eslint-config-react": "^0.1.2",
     "@types/react": "^17.0.33",
     "eslint": "^7.32.0",
