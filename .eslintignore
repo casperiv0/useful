@@ -1,6 +1,5 @@
 node_modules
 
-hooks/*
-!src/hooks
-index.js
-index.d.ts
+/hooks/*
+/index.js
+/index.d.ts
