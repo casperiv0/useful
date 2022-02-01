@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.6
+
+- Bump dependencies
+
 ## 1.4.5
 
 - Bump dependencies
