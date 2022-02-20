@@ -39,3 +39,6 @@ const Component = () => {
 - `useWindowEvent`
 - `useEmitEvent`
 - `useDots`
+- `useViewport`
+- `useDownload`
+- `useTabFocus`

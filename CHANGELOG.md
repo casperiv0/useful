@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5.0
+
+- Bump dependencies
+- Add `useViewport` hook
+
 ## 1.4.5
 
 - Bump dependencies
