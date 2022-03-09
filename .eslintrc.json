@@ -4,15 +4,12 @@
     "es6": true
   },
   "extends": ["@casper124578/eslint-config", "@casper124578/eslint-config-react"],
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
+    "project": "./tsconfig.json",
     "ecmaVersion": 2018,
     "sourceType": "module"
   }

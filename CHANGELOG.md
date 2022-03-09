@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5.1
+
+- Bump dependencies
+- Minor code improvements
+
 ## 1.5.0
 
 - Bump dependencies

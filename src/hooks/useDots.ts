@@ -33,7 +33,7 @@ export function useDots(use: boolean, maxLength = 3) {
   const [dots, setDots] = React.useState<"."[]>(["."]);
 
   React.useEffect(() => {
-    if (use === false) return;
+    if (!use) return;
 
     const interval = setInterval(() => {
       setDots((p) => {

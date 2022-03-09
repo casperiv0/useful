@@ -17,7 +17,7 @@ export function useNetworkStatus(): Status {
     if (typeof window === "undefined") return;
 
     const handler = (online: boolean) => () => {
-      setStatus(online === true ? "online" : "offline");
+      setStatus(online ? "online" : "offline");
     };
 
     window.addEventListener("load", handler(navigator.onLine));
