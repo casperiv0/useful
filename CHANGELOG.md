@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5.3
+
+- Update documentation
+- Update README.md
+
 ## 1.5.2
 
 - Bump dependencies

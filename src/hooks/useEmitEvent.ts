@@ -18,18 +18,20 @@ type ReturnType<T> = {
  * @example
  * ```tsx
  * const Component = () => {
- *  const { dispatch, event } = useEmitEvent("MyCoolEvent");
+ *   const { dispatch, event } = useEmitEvent("MyCoolEventName");
  *
- *  console.log(event);
+ *   console.log(event);
  *
- *  const handler = () => {
- *    dispatch();
- *  }
+ *   const handler = () => {
+ *     dispatch();
+ *   };
  *
- *  return <div>
- *      <button>Dispatch the event!</button>
- *    </div>
- *  }
+ *   return (
+ *     <div>
+ *       <button onClick={handler}>Dispatch the event!</button>
+ *     </div>
+ *   );
+ * };
  * ```
  */
 export function useEmitEvent<T = unknown>(

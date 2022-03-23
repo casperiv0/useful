@@ -31,14 +31,14 @@ const Component = () => {
 
 ## Available hooks
 
-- `useMounted`
-- `useNetworkStatus`
-- `usePortal`
-- `useSearch`
-- `useSound`
-- `useWindowEvent`
-- `useEmitEvent`
-- `useDots`
-- `useViewport`
-- `useDownload`
-- `useTabFocus`
+- [`useDots.ts`](./docs/hooks/dots)
+- [`useDownload.ts`](./docs/hooks/download)
+- [`useEmitEvent.ts`](./docs/hooks/emit-event)
+- [`useMounted.ts`](./docs/hooks/mounted)
+- [`useNetworkStatus.ts`](./docs/hooks/network-status)
+- [`usePortal.ts`](./docs/hooks/portal)
+- [`useSearch.ts`](./docs/hooks/search)
+- [`useSound.ts`](./docs/hooks/sound)
+- [`useTabFocus.ts`](./docs/hooks/tab-focus)
+- [`useViewport.ts`](./docs/hooks/viewport)
+- [`useWindowEvent.ts`](./docs/hooks/window-event)
