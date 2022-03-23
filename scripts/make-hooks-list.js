@@ -3,6 +3,13 @@ import { resolve } from "node:path";
 
 const HOOKS_PATH = resolve(process.cwd(), "src", "hooks");
 const README_PATH = resolve(process.cwd(), "README.md");
+const DOCS_README_PATH = resolve(process.cwd(), "docs", "README.md");
+
+let DOCS_README = `# Documentation
+
+## Available hooks
+
+`;
 
 let DEFAULT_MARKDOWN = `# useful
 
@@ -43,14 +50,19 @@ const hooks = (await readdir(HOOKS_PATH)).filter((v) => v !== "index.ts");
 
 /**
  * @param {string} hook
+ * @param {boolean} isDocs
  */
-function makeMarkdownURL(hook) {
+function makeMarkdownURL(hook, isDocs) {
   const beatifiedName =
     hook
       .match(/[A-Z][a-z]+/g)
       ?.join("-")
       .toLowerCase() ?? hook;
-  return `- [\`${hook}\`](./docs/hooks/${beatifiedName}.md)\n`;
+
+  const fileName = `use-${beatifiedName}.md`;
+  const baseDir = isDocs ? "./hooks/" : "./docs/hooks/";
+
+  return `- [\`${hook}\`](${baseDir}${fileName})\n`;
 }
 
 for (const hook of hooks) {
@@ -58,4 +70,12 @@ for (const hook of hooks) {
   DEFAULT_MARKDOWN += md;
 }
 
-await writeFile(README_PATH, DEFAULT_MARKDOWN);
+for (const hook of hooks) {
+  const md = makeMarkdownURL(hook, true);
+  DOCS_README += md;
+}
+
+await Promise.all([
+  writeFile(README_PATH, DEFAULT_MARKDOWN),
+  writeFile(DOCS_README_PATH, DOCS_README),
+]);

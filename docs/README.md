@@ -1,13 +1,15 @@
-# Docs
+# Documentation
 
 ## Available hooks
 
-- [`useDots`](./hooks/use-dots.md)
-- [`useMounted`](./hooks/use-mounted.md)
-- [`useNetworkStatus`](./hooks/use-network-status.md)
-- [`usePortal`](./hooks/use-portal.md)
-- [`useSearch`](./hooks/use-search.md)
-- [`useSound`](./hooks/use-sound.md)
-- [`useWindowEvent`](./hooks/use-window-event.md)
-- [`useTabFocus`](./hooks/use-tab-focus.md)
-- [`useDownload`](./hooks/use-download.md)
+- [`useDots.ts`](./hooks/use-dots.md)
+- [`useDownload.ts`](./hooks/use-download.md)
+- [`useEmitEvent.ts`](./hooks/use-emit-event.md)
+- [`useMounted.ts`](./hooks/use-mounted.md)
+- [`useNetworkStatus.ts`](./hooks/use-network-status.md)
+- [`usePortal.ts`](./hooks/use-portal.md)
+- [`useSearch.ts`](./hooks/use-search.md)
+- [`useSound.ts`](./hooks/use-sound.md)
+- [`useTabFocus.ts`](./hooks/use-tab-focus.md)
+- [`useViewport.ts`](./hooks/use-viewport.md)
+- [`useWindowEvent.ts`](./hooks/use-window-event.md)
