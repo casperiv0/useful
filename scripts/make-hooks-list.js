@@ -50,7 +50,7 @@ function makeMarkdownURL(hook) {
       .match(/[A-Z][a-z]+/g)
       ?.join("-")
       .toLowerCase() ?? hook;
-  return `- [\`${hook}\`](./docs/hooks/${beatifiedName})\n`;
+  return `- [\`${hook}\`](./docs/hooks/${beatifiedName}.md)\n`;
 }
 
 for (const hook of hooks) {
