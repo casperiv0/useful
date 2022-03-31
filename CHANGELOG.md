@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.4
+
+- Fix exported hooks from index
+
 ## 1.5.3
 
 - Update documentation

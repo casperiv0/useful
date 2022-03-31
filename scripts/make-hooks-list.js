@@ -4,6 +4,9 @@ import { resolve } from "node:path";
 const HOOKS_PATH = resolve(process.cwd(), "src", "hooks");
 const README_PATH = resolve(process.cwd(), "README.md");
 const DOCS_README_PATH = resolve(process.cwd(), "docs", "README.md");
+const EXPORT_CODE_PATH = resolve(process.cwd(), "src", "hooks", "index.ts");
+
+let EXPORT_CODE = "";
 
 let DOCS_README = `# Documentation
 
@@ -65,17 +68,30 @@ function makeMarkdownURL(hook, isDocs) {
   return `- [\`${hook}\`](${baseDir}${fileName})\n`;
 }
 
-for (const hook of hooks) {
-  const md = makeMarkdownURL(hook);
-  DEFAULT_MARKDOWN += md;
+/**
+ * @param {string} hook
+ */
+function makeExportCode(hook) {
+  const fileName = hook.replace(".ts", "");
+  return `export * from "./${fileName}";\n`;
 }
 
 for (const hook of hooks) {
-  const md = makeMarkdownURL(hook, true);
-  DOCS_README += md;
+  const md = makeMarkdownURL(hook);
+  const docs = makeMarkdownURL(hook, true);
+
+  let exportCode;
+  if (!["index.ts"].includes(hook)) {
+    exportCode = makeExportCode(hook);
+  }
+
+  DOCS_README += docs;
+  DEFAULT_MARKDOWN += md;
+  EXPORT_CODE += exportCode;
 }
 
 await Promise.all([
   writeFile(README_PATH, DEFAULT_MARKDOWN),
   writeFile(DOCS_README_PATH, DOCS_README),
+  writeFile(EXPORT_CODE_PATH, EXPORT_CODE),
 ]);
