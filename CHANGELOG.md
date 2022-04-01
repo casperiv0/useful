@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.5
+
+- Fix: export from `.js`
+
 ## 1.5.4
 
 - Fix exported hooks from index

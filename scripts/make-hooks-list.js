@@ -73,7 +73,7 @@ function makeMarkdownURL(hook, isDocs) {
  */
 function makeExportCode(hook) {
   const fileName = hook.replace(".ts", "");
-  return `export * from "./${fileName}";\n`;
+  return `export { ${fileName} } from "./${fileName}.js";\n`;
 }
 
 for (const hook of hooks) {
