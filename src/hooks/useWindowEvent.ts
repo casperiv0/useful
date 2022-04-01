@@ -20,7 +20,6 @@ import * as React from "react";
  * ```
  */
 export function useWindowEvent(
-  // eslint-disable-next-line @typescript-eslint/ban-types
   eventName: keyof WindowEventMap | (string & {}),
   listener: EventListenerOrEventListenerObject,
   options?: boolean | AddEventListenerOptions,

@@ -2,11 +2,11 @@ import * as React from "react";
 
 export type NullableHTMLAudio = HTMLAudioElement | null;
 
-type ReturnType = {
-  play: () => void;
-  stop: () => void;
+interface ReturnType {
+  play(): void;
+  stop(): void;
   audio: NullableHTMLAudio;
-};
+}
 
 /**
  * simplify the Audio class

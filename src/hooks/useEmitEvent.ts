@@ -1,12 +1,12 @@
 import * as React from "react";
 
-type ReturnType<T> = {
+interface ReturnType<T> {
   /**
    * the event
    */
   event: CustomEvent<T> | null;
-  dispatch: () => boolean;
-};
+  dispatch(): boolean;
+}
 
 /**
  * easily emit an event using `dispatchEvent` and `CustomEvent`

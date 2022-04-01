@@ -1,10 +1,10 @@
 import * as React from "react";
 
-type ReturnType<T, InputElement> = {
-  onChange: (e: React.ChangeEvent<InputElement>) => void;
+interface ReturnType<T, InputElement> {
+  onChange(e: React.ChangeEvent<InputElement>): void;
   search: string;
   filtered: T[];
-};
+}
 
 /**
  * search through an array with the provided key
@@ -33,7 +33,6 @@ type ReturnType<T, InputElement> = {
  * ```
  */
 
-// eslint-disable-next-line @typescript-eslint/ban-types
 export function useSearch<T = object, InputElement extends HTMLElement = HTMLInputElement>(
   key: keyof T,
   items: T[],
