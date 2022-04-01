@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5.6
+
+- Bump dependencies
+- Minor code improvements
+
 ## 1.5.5
 
 - Fix: export from `.js`
