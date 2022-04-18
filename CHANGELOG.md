@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.6.0
+
+- Support React 18
+
 ## 1.5.6
 
 - Bump dependencies

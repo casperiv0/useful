@@ -7,11 +7,11 @@
   "extends": ["@casper124578/eslint-config", "@casper124578/eslint-config-react"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
     "project": "./tsconfig.json",
-    "ecmaVersion": 2018,
+    "ecmaVersion": 2022,
     "sourceType": "module"
+  },
+  "rules": {
+    "unicorn/prefer-module": "error"
   }
 }

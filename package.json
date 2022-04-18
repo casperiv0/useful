@@ -1,17 +1,18 @@
 {
   "name": "@casper124578/useful",
-  "version": "1.5.6",
+  "version": "1.6.0",
   "description": "List of useful React functions and hooks",
   "type": "module",
   "license": "MIT",
   "homepage": "https://github.com/Dev-CasperTheGhost/useful#readme",
   "exports": {
     ".": "./index.js",
-    "./*": "./*"
+    "./hooks/*": "./hooks/*",
+    "./package.json": "./package.json"
   },
   "scripts": {
     "remove-build": "rm -rf index.js index.d.ts hooks",
-    "build": "npm run remove-build && tsc",
+    "build": "npm run remove-build && tsc && npm run make-readme",
     "lint": "eslint . --ext .ts,.js,.tsx,.jsx",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,css,json}\" --ignore-path .gitignore",
     "make-readme": "node ./scripts/make-hooks-list.js"
@@ -35,15 +36,15 @@
     "url": "https://github.com/Dev-CasperTheGhost/useful/issues"
   },
   "devDependencies": {
-    "@casper124578/eslint-config": "^4.1.0",
-    "@casper124578/eslint-config-react": "^4.1.0",
-    "@types/react": "^17.0.43",
-    "eslint": "^8.12.0",
+    "@casper124578/eslint-config": "^4.2.0",
+    "@casper124578/eslint-config-react": "^4.2.0",
+    "@types/react": "^18.0.5",
+    "eslint": "^8.13.0",
     "typescript": "^4.6.3"
   },
   "peerDependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": ">=17.0.2",
+    "react-dom": ">=17.0.2"
   },
   "files": [
     "hooks/",
@@ -51,7 +52,7 @@
     "index.d.ts"
   ],
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": ">=17.0.2",
+    "react-dom": ">=17.0.2"
   }
 }
