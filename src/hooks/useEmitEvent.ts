@@ -5,7 +5,13 @@ interface ReturnType<T> {
    * the event
    */
   event: CustomEvent<T> | null;
-  dispatch(): boolean;
+
+  /**
+   *
+   * @param elementRef the element where to dispatch from
+   * @default `document`
+   */
+  dispatch(elementRef?: React.Ref<HTMLElement>): boolean;
 }
 
 /**
@@ -54,15 +60,19 @@ export function useEmitEvent<T = unknown>(
     };
   }, [eventName, options, payload]);
 
-  const dispatch = React.useCallback(() => {
-    if (!event) {
-      throw new Error("somehow 'event' was null");
-    }
+  const dispatch = React.useCallback(
+    (elementRef?: React.RefObject<HTMLElement>) => {
+      if (!event) {
+        throw new Error("somehow 'event' was null");
+      }
 
-    const d = dispatchEvent(event);
+      const el = elementRef?.current ?? document;
+      const d = el.dispatchEvent(event);
 
-    return d;
-  }, [event]);
+      return d;
+    },
+    [event],
+  );
 
   return {
     event,
