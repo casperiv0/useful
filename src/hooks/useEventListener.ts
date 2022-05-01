@@ -1,5 +1,17 @@
 import * as React from "react";
 
+interface UseEventListenerOptions {
+  eventName: keyof WindowEventMap | (string & {});
+  listener: EventListenerOrEventListenerObject;
+  options?: boolean | AddEventListenerOptions;
+
+  /**
+   * the element where to listen from
+   * @default `window`
+   */
+  element?: React.RefObject<HTMLElement>;
+}
+
 /**
  * listen for an event and automatically clean up the effect on un-mount
  * @param {keyof WindowEventMap | (string & {})} eventName Name of the eventName
@@ -13,24 +25,21 @@ import * as React from "react";
  *     console.log(e.target);
  *  }
  *
- *   useWindowEvent("click", clickHandler, options);
+ *   useEventListener("click", clickHandler, options);
  *
  *   return <p>Hello world!</p>
  * }
  * ```
  */
-export function useWindowEvent(
-  eventName: keyof WindowEventMap | (string & {}),
-  listener: EventListenerOrEventListenerObject,
-  options?: boolean | AddEventListenerOptions,
-) {
+export function useEventListener(options: UseEventListenerOptions) {
   React.useEffect(() => {
-    const handler = listener;
+    const handler = options.listener;
+    const element = options.element?.current ?? window;
 
-    window.addEventListener(eventName, handler, options);
+    element.addEventListener(options.eventName, handler, options.options);
 
     return () => {
-      window.removeEventListener(eventName, handler, options);
+      element.removeEventListener(options.eventName, handler, options.options);
     };
-  }, [eventName, listener, options]);
+  }, [options]);
 }

@@ -1,6 +1,7 @@
 export { useDots } from "./useDots.js";
 export { useDownload } from "./useDownload.js";
 export { useEmitEvent } from "./useEmitEvent.js";
+export { useEventListener } from "./useEventListener.js";
 export { useMounted } from "./useMounted.js";
 export { useNetworkStatus } from "./useNetworkStatus.js";
 export { usePortal } from "./usePortal.js";
@@ -8,4 +9,3 @@ export { useSearch } from "./useSearch.js";
 export { useSound } from "./useSound.js";
 export { useTabFocus } from "./useTabFocus.js";
 export { useViewport } from "./useViewport.js";
-export { useWindowEvent } from "./useWindowEvent.js";
