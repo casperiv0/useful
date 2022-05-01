@@ -9,7 +9,7 @@ interface UseEventListenerOptions {
    * the element where to listen from
    * @default `window`
    */
-  element?: React.RefObject<HTMLElement>;
+  elementRef?: React.RefObject<HTMLElement>;
 }
 
 /**
@@ -34,7 +34,7 @@ interface UseEventListenerOptions {
 export function useEventListener(options: UseEventListenerOptions) {
   React.useEffect(() => {
     const handler = options.listener;
-    const element = options.element?.current ?? window;
+    const element = options.elementRef?.current ?? window;
 
     element.addEventListener(options.eventName, handler, options.options);
 

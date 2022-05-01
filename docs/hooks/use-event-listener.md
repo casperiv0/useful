@@ -11,18 +11,18 @@ import { useEventListener } from "@casper124578/useful/hooks/useEventListener";
 const Component = () => {
   const buttonRef = React.useRef<HTMLButtonElement>(null);
 
-  const myHandler = (event) => {
+  const myWindowHandler = (event) => {
     console.log(event);
   };
 
-  // click anywhere on the `window`
-  useEventListener({ eventName: "click", handler: myHandler });
+  // listen anywhere on the `window`
+  useEventListener({ eventName: "click", handler: myWindowHandler });
 
   const myButtonHandler = (event) => {
     console.log("Button handler", event);
   };
 
-  // click anywhere on the `button`
+  // listen on the `button`
   useEventListener({ elementRef: buttonRef, eventName: "click", handler: myButtonHandler });
 
   return (
