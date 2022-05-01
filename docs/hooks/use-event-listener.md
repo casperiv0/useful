@@ -16,14 +16,14 @@ const Component = () => {
   };
 
   // listen anywhere on the `window`
-  useEventListener({ eventName: "click", handler: myWindowHandler });
+  useEventListener({ eventName: "click", listener: myWindowHandler });
 
   const myButtonHandler = (event) => {
     console.log("Button handler", event);
   };
 
   // listen on the `button`
-  useEventListener({ elementRef: buttonRef, eventName: "click", handler: myButtonHandler });
+  useEventListener({ elementRef: buttonRef, eventName: "click", listener: myButtonHandler });
 
   return (
     <div>

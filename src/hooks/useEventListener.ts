@@ -25,7 +25,7 @@ interface UseEventListenerOptions {
  *     console.log(e.target);
  *  }
  *
- *   useEventListener("click", clickHandler, options);
+ *   useEventListener({ eventName: "click", listener: clickHandler, options });
  *
  *   return <p>Hello world!</p>
  * }
