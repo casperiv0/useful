@@ -2,6 +2,8 @@
 
 ## 2.0.0
 
+- Bump dependencies
+
 **BREAKING:**
 
 - Replace `useWindowEvent` with [`useEventListener.ts`](./docs/hooks/use-event-listener.md)
