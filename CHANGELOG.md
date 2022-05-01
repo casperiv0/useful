@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.1
+
+- fix examples
+
 ## 2.0.0
 
 - Bump dependencies
