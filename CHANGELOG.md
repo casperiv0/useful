@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.4
+
+- build(deps-dev): bump @types/react from 18.0.15 to 18.0.18 by @dependabot in https://github.com/Dev-CasperTheGhost/useful/pull/61
+- build(deps-dev): bump eslint from 8.21.0 to 8.23.0 by @dependabot in https://github.com/Dev-CasperTheGhost/useful/pull/60
+- build(deps-dev): bump typescript from 4.7.4 to 4.8.2 by @dependabot in https://github.com/Dev-CasperTheGhost/useful/pull/59
+- bump dependencies
+
 ## 2.0.3
 
 - build(deps-dev): bump eslint from 8.18.0 to 8.20.0 by @dependabot in https://github.com/Dev-CasperTheGhost/useful/pull/58
