@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.5
+
+- bump dependencies
+
 ## 2.0.4
 
 - build(deps-dev): bump @types/react from 18.0.15 to 18.0.18 by @dependabot in https://github.com/Dev-CasperTheGhost/useful/pull/61
