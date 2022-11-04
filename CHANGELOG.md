@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.6
+
+- bump dependencies
+- `react` & `react-dom` peerDeps only
+
 ## 2.0.5
 
 - bump dependencies
