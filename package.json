@@ -12,10 +12,11 @@
   },
   "scripts": {
     "remove-build": "rm -rf index.js index.d.ts hooks",
-    "build": "npm run remove-build && tsc && npm run make-readme",
+    "build": "pnpm run remove-build && tsc && pnpm run make-readme",
     "lint": "eslint . --ext .ts,.js,.tsx,.jsx",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,css,json}\" --ignore-path .gitignore",
-    "make-readme": "node ./scripts/make-hooks-list.js"
+    "make-readme": "node ./scripts/make-hooks-list.js",
+    "typecheck": "tsc --noEmit"
   },
   "engines": {
     "node": "^12.20.0 || ^14.13.1 || >=16.0.0"

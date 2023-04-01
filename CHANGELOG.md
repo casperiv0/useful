@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.7
+
+- Move to `pnpm`
+- Bump dependencies
+
 ## 2.0.6
 
 - bump dependencies
