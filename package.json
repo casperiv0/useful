@@ -40,9 +40,9 @@
   "devDependencies": {
     "@casper124578/eslint-config": "^6.0.0",
     "@casper124578/eslint-config-react": "^6.0.0",
-    "@types/react": "^18.2.0",
-    "eslint": "^8.39.0",
-    "typescript": "^5.0.4"
+    "@types/react": "^18.2.20",
+    "eslint": "^8.47.0",
+    "typescript": "^5.1.6"
   },
   "peerDependencies": {
     "react": ">=18.2.0",
