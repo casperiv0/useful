@@ -7,7 +7,7 @@ check if a user is connected to a network.
 ## Example
 
 ```tsx
-import { useNetworkStatus } from "@casper124578/useful/hooks/useNetworkStatus";
+import { useNetworkStatus } from "@casperiv/useful/hooks/useNetworkStatus";
 
 const Component = () => {
   const networkStatus = useNetworkStatus();

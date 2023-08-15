@@ -5,7 +5,7 @@ Check if a component has been mounted.
 ## Example
 
 ```tsx
-import { useMounted } from "@casper124578/useful/hooks/useMounted";
+import { useMounted } from "@casperiv/useful/hooks/useMounted";
 
 const Component = () => {
   const mounted = useMounted();

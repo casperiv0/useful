@@ -5,7 +5,7 @@ Returns whether the user is focused on the tab
 ## Example
 
 ```tsx
-import { useTabFocus } from "@casper124578/useful/hooks/useTabFocus";
+import { useTabFocus } from "@casperiv/useful/hooks/useTabFocus";
 
 const Component = () => {
   const isFocused = useTabFocus();

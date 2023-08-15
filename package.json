@@ -1,5 +1,5 @@
 {
-  "name": "@casper124578/useful",
+  "name": "@casperiv/useful",
   "version": "2.1.0",
   "description": "List of useful React functions and hooks",
   "type": "module",
@@ -38,8 +38,8 @@
     "url": "https://github.com/Dev-CasperTheGhost/useful/issues"
   },
   "devDependencies": {
-    "@casper124578/eslint-config": "^6.0.0",
-    "@casper124578/eslint-config-react": "^6.0.0",
+    "@casperiv/eslint-config": "^8.0.0",
+    "@casperiv/eslint-config-react": "^8.0.0",
     "@types/react": "^18.2.20",
     "eslint": "^8.47.0",
     "typescript": "^5.1.6"

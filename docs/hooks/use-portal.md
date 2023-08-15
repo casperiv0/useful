@@ -6,7 +6,7 @@ create a portal ref to create a portal and append it to the body.
 
 ```tsx
 import { createPortal } from "react-dom";
-import { usePortal } from "@casper124578/useful/hooks/usePortal";
+import { usePortal } from "@casperiv/useful/hooks/usePortal";
 
 const Component = () => {
   const portalRef = usePortal("myCoolId");

@@ -10,7 +10,7 @@ a "loading state" helper. Add loading dots to some text
 
 ```tsx
 import * as React from "react";
-import { useDots } from "@casper124578/useful/hooks/useDots";
+import { useDots } from "@casperiv/useful/hooks/useDots";
 
 const Component = () => {
   const [isLoading, setLoading] = React.useState(false);

@@ -9,7 +9,7 @@ Returns `filtered` with the filtered data.
 ## Example
 
 ```tsx
-import { useSearch } from "@casper124578/useful/hooks/useSearch";
+import { useSearch } from "@casperiv/useful/hooks/useSearch";
 
 interface MyData {
   name: string;

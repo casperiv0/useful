@@ -6,7 +6,7 @@ Listen for an event and automatically clean up the effect on un-mount
 
 ```tsx
 import * as React from "react";
-import { useEventListener } from "@casper124578/useful/hooks/useEventListener";
+import { useEventListener } from "@casperiv/useful/hooks/useEventListener";
 
 const Component = () => {
   const buttonRef = React.useRef<HTMLButtonElement>(null);

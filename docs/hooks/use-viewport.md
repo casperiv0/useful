@@ -7,7 +7,7 @@ Returns the current window viewport width
 ## Example
 
 ```tsx
-import { useViewport } from "@casper124578/useful/hooks/useViewport";
+import { useViewport } from "@casperiv/useful/hooks/useViewport";
 
 const Component = () => {
   const viewport = useViewport();

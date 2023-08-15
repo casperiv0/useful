@@ -7,7 +7,7 @@ Easily emit a browser event using `dispatchEvent` and `CustomEvent`
 ## Example
 
 ```tsx
-import { useEmitEvent } from "@casper124578/useful/hooks/useEmitEvent";
+import { useEmitEvent } from "@casperiv/useful/hooks/useEmitEvent";
 
 const Component = () => {
   const { dispatch, event } = useEmitEvent("MyCoolEventName");

@@ -7,19 +7,19 @@ List of useful React functions and hooks
 ### npm
 
 ```bash
-npm install @casper124578/useful
+npm install @casperiv/useful
 ```
 
 ### Yarn
 
 ```bash
-yarn add @casper124578/useful
+yarn add @casperiv/useful
 ```
 
 ## Usage
 
 ```tsx
-import { useMounted } from "@casper124578/useful/hooks/useMounted";
+import { useMounted } from "@casperiv/useful/hooks/useMounted";
 
 const Component = () => {
   const mounted = useMounted();

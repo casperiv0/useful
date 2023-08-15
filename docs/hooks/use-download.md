@@ -6,7 +6,7 @@ Returns a function that can be called to download a file to a user.
 
 ```tsx
 import * as React from "react";
-import { useDownload } from "@casper124578/useful/hooks/useDownload";
+import { useDownload } from "@casperiv/useful/hooks/useDownload";
 
 const Component = () => {
   const download = useDownload();
