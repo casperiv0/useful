@@ -1,6 +1,6 @@
 {
   "name": "@casperiv/useful",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "List of useful React functions and hooks",
   "type": "module",
   "license": "MIT",
@@ -20,7 +20,7 @@
     "typecheck": "tsc --noEmit"
   },
   "engines": {
-    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+    "node": ">=16.0.0 || >=18.0.0"
   },
   "repository": {
     "type": "git",
