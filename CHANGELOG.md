@@ -4,7 +4,6 @@
 
 - Move npm handle from `@casper124578` to `casperiv`.
 
-
 ## 2.1.0
 
 - Bump dependencies
