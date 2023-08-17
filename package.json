@@ -4,7 +4,7 @@
   "description": "List of useful React functions and hooks",
   "type": "module",
   "license": "MIT",
-  "homepage": "https://github.com/Dev-CasperTheGhost/useful#readme",
+  "homepage": "https://github.com/casperiv0/useful#readme",
   "exports": {
     ".": "./index.js",
     "./hooks/*": "./hooks/*",
@@ -24,18 +24,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dev-CasperTheGhost/useful.git"
+    "url": "git+https://github.com/casperiv0/useful.git"
   },
   "keywords": [
     "react-hooks",
     "hooks"
   ],
   "author": {
-    "name": "Dev-CasperTheGhost",
+    "name": "Casper Iversen",
     "url": "https://www.casperiv.dev"
   },
   "bugs": {
-    "url": "https://github.com/Dev-CasperTheGhost/useful/issues"
+    "url": "https://github.com/casperiv0/useful/issues"
   },
   "devDependencies": {
     "@casperiv/eslint-config": "^8.0.0",

@@ -25,15 +25,15 @@
 
 ## 2.0.4
 
-- build(deps-dev): bump @types/react from 18.0.15 to 18.0.18 by @dependabot in https://github.com/Dev-CasperTheGhost/useful/pull/61
-- build(deps-dev): bump eslint from 8.21.0 to 8.23.0 by @dependabot in https://github.com/Dev-CasperTheGhost/useful/pull/60
-- build(deps-dev): bump typescript from 4.7.4 to 4.8.2 by @dependabot in https://github.com/Dev-CasperTheGhost/useful/pull/59
+- build(deps-dev): bump @types/react from 18.0.15 to 18.0.18 by @dependabot in https://github.com/casperiv0/useful/pull/61
+- build(deps-dev): bump eslint from 8.21.0 to 8.23.0 by @dependabot in https://github.com/casperiv0/useful/pull/60
+- build(deps-dev): bump typescript from 4.7.4 to 4.8.2 by @dependabot in https://github.com/casperiv0/useful/pull/59
 - bump dependencies
 
 ## 2.0.3
 
-- build(deps-dev): bump eslint from 8.18.0 to 8.20.0 by @dependabot in https://github.com/Dev-CasperTheGhost/useful/pull/58
-- build(deps-dev): bump @types/react from 18.0.14 to 18.0.15 by @dependabot in https://github.com/Dev-CasperTheGhost/useful/pull/57
+- build(deps-dev): bump eslint from 8.18.0 to 8.20.0 by @dependabot in https://github.com/casperiv0/useful/pull/58
+- build(deps-dev): bump @types/react from 18.0.14 to 18.0.15 by @dependabot in https://github.com/casperiv0/useful/pull/57
 - bump dependencies
 
 ## 2.0.2
@@ -113,7 +113,7 @@
 
 ## 1.2.0
 
-- [add docs](https://dev-caspertheghost.github.io/useful/)
+- [add docs](https://casperiv0.github.io/useful/)
 - Export `useDots` in `hooks/index`
 - Add event type for `useWindowEvent`
 
@@ -177,7 +177,7 @@ const Component = () => {
 
 ## 0.0.10
 
-- Added [custom ESLint config](https://github.com/dev-caspertheghost/eslint-config)
+- Added [custom ESLint config](https://github.com/casperiv0/eslint-config)
 
 ## 0.0.9
 
